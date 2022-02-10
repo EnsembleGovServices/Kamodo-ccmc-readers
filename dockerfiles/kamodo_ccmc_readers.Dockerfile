@@ -5,4 +5,4 @@ ADD . /kamodo_ccmc
 
 WORKDIR /kamodo_ccmc
 
-RUN pip install -e .
+RUN pip install .
