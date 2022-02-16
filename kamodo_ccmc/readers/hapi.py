@@ -115,6 +115,8 @@ class HAPI(Kamodo):
                     aunit="nT"
                     afill=0.1*float(afill)
                     adata=0.1*adata.astype(np.float)
+                if "Deg" == aunit:
+                    aunit = 'deg'
                 self.variables[varname] = dict(units=aunit,
                                                data=adata,
                                                size=asize,
